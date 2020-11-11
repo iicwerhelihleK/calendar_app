@@ -1,3 +1,4 @@
+from abc import ABCMeta
 from datetime import datetime, timedelta
 from cal_setup import get_calendar_service
 
@@ -27,6 +28,22 @@ def main():
     print("summary: ", event_result['summary'])
     print("starts at: ", event_result['start']['dateTime'])
     print("ends at: ", event_result['end']['dateTime'])
+
+
+    
+
+
+# def main():
+#     # First retrieve the event from the API.
+#     event = service.events().get(calendarId='primary', eventId='eventId').execute()
+
+#     event['summary'] = 'Appointment at Somewhere'
+
+#     updated_event = service.events().update(calendarId='primary', eventId=event['id'], body=event).execute()
+
+#     # Print the updated date.
+#     print (updated_event['updated'])
+
 
 if __name__ == '__main__':
     main()
