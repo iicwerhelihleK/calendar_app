@@ -1,0 +1,1 @@
+The tests folder can be used to store all tests 
